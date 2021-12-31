@@ -9,12 +9,11 @@
 
     function findPosition(num, arrNum) {
         let index = -1;
-        let count = 0;
         let text = "";
         for (let i = 0; i < arrNum.length; i++) {
             if (num === arrNum[i]) {
                 index = i;
-                count++;
+
                 text += i + " ";
             }
         }
@@ -27,8 +26,14 @@
         }
     }
 
+
+    let arrNum = []
+    let length = parseInt(prompt('Nhập độ dài chuỗi'));
+    for (let i = 0; i < length; i++) {
+        let j = parseInt(prompt(' Nhập ' + i));
+        arrNum.push(j);
+    }
     let num = parseInt(prompt('Nhập số cần tìm'));
-    let arrNum = [1, 2, 3, 4, 5, 6, 5, 7, 8, 9];
     findPosition(num, arrNum);
 
 </script>
