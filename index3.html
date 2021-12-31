@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 3</title>
+</head>
+<body>
+<script>
+    function kiemTraNguyenAm(arrStr) {
+        let count = 0
+        let index = -1;
+        for (let i = 0; i < arrStr.length; i++) {
+            if (arrStr[i] === 'a' || arrStr[i] === 'o' || arrStr[i] === 'e' || arrStr[i] === 'u' || arrStr[i] === 'i') {
+                index = i
+                count++;
+            }
+        }
+        if (index != -1) {
+
+            alert('Chuỗ bạn nhập có ' + count + ' ký tự nguyên âm');
+        } else {
+            alert('Chuỗi bạn nhập không có ký tự nguyên âm');
+        }
+
+    }
+
+    let arrStr = ['a', 'b', 'a', 'd', 'e', 'f']
+    kiemTraNguyenAm(arrStr);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+
+    function findPosition(num, arrNum) {
+        let index = -1;
+        let count = 0;
+        let text = "";
+        for (let i = 0; i < arrNum.length; i++) {
+            if (num === arrNum[i]) {
+                index = i;
+                count++;
+                text += i + " ";
+            }
+        }
+        if (index != -1) {
+            alert('Số bạn nhập có vị trí ' + text + ' Trong mảng');
+
+
+        } else {
+            alert(num + ' Không có trong mảng');
+        }
+    }
+
+    let num = parseInt(prompt('Nhập số cần tìm'));
+    let arrNum = [1, 2, 3, 4, 5, 6, 5, 7, 8, 9];
+    findPosition(num, arrNum);
+
+</script>
+</body>
+</html>
